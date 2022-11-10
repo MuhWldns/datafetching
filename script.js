@@ -46,7 +46,7 @@ searchButton.addEventListener('click', function () {
             showMovieDetailButton.forEach(btn => {
                 btn.addEventListener('click', function () {
                     const imdbID = this.dataset.films;
-                    fetch('http://www.omdbapi.com/?apikey=c334637&i=' + imdbID)
+                    fetch('https://www.omdbapi.com/?apikey=c334637&i=' + imdbID)
                         .then(response => response.json())
                         .then(x => {
                             const getMovieDetail = ShowMovieDetail(x);
